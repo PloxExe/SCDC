@@ -20,18 +20,16 @@
 
 
     <!-- Customized styles -->
-    <style>
-        /* SCDC's website reference font */
+      <style>
         body {
             font-family: "Roboto Mono", monospace;
-            margin: 0; /* Reset default margin */
+            margin: 0;
         }
 
         .uppercase {
             text-transform: uppercase;
         }
 
-        /* SCDC brand colors */
         .text-scdc {
             color: #E09900;
         }
@@ -44,66 +42,22 @@
             color: #E09900;
         }
 
-        .nav-logo {
-            float: left;
-            /* Align logo to the left */
-            margin-right: 20px;
-            /* Add some margin between the logo and links */
-        }
-
-        /* Styling for the navigation pane */
-        .nav-pane {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            /* Set the width of the nav pane to fill the entire top */
-            background-color: #000000;
-            padding: 20px;
-            z-index: 1000;
-            /* Ensure it's above other content */
-            box-sizing: border-box;
-            /* Include padding in width */
-            text-align: right;
-            /* Align text to the right */
-        }
-
-        .nav-pane a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 20px;
-            /* Add padding to links */
-        }
-
-        .nav-pane a:hover {
-            background-color: #333333;
-        }
-
-        /* Move content down to make space for the navbar */
         .main-content {
             margin-top: 140px;
-            /* Adjust based on the height of the navbar */
             padding-top: 20px;
-            /* Add padding to the top */
         }
 
-        /* Center the content */
         .center-content {
             text-align: center;
         }
 
-        /* Adjust the size of carousel images */
         .carousel-item img {
             height: auto;
-            /* Set the height */
             max-width: 100%;
-            /* Ensure images don't overflow */
         }
 
-        /* Adjust the size of carousel container */
         .carousel {
             height: auto;
-            /* Set the height */
         }
 
         .footer {
@@ -111,49 +65,38 @@
             background-size: cover;
             background-position: center;
             height: 200px;
-            /* Set the height of your footer as needed */
             width: 100%;
+        }
+        
+        /* Slide transition */
+        .carousel-item {
+            transition: transform 1s ease;
+        }
+
+        .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+            display: block !important;
+        }
+
+        .carousel-inner {
+            overflow: hidden;
+        }
+
+        .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right, .carousel-item.active {
+            transform: translateX(0);
+        }
+
+        .carousel-item-prev.carousel-item-left, .carousel-item-next.carousel-item-right, .carousel-item.active {
+            transform: translateX(0);
         }
     </style>
 
 </head>
 
 <body>
-    <!-- Navigation pane -->
-    <nav class="nav-pane">
-        <!-- Logo -->
-        <div class="nav-logo">
-            <img src="img/logo.JPG" alt="Your Logo" width="100">
-        </div>
-        <div class="nav-logo-2">
-            <img src="img/logo2.JPG" alt="Your Logo" width="100">
-        </div>
-        <!-- Links -->
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#Robo Warrior">Robo Warrior</a>
-        <a href="#Events">Events</a>
-        <a href="#Programs">Programs</a>
-        <a href="#Services">Services</a>
-        <a href="#Community Reasources">Community Reasources</a>
-        <a href="#CDonate">Donate</a>
-        <a href="#Volunter">Volunter</a>
-        <a href="#contact">Contact Us</a>
-        <!-- Add more navigation links here -->
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <h1 class="text-center mt-5 my-5">Empowering Southeast LA with Digital Solutions</h1>
-    <h2 class="text-center mb-3" style="line-height: 1.3; margin: 0 auto
-
-; max-width: 1000px;">We aim to empower small
+    <h2 class="text-center mb-3" style="line-height: 1.3; margin: 0 auto; max-width: 1000px;">We aim to empower small
         businesses in today's ever-changing world. Join us in shaping a brighter future. Together with city council
-        members, benefactors, and nonprofits, let's chart a course to success.</h2>
-    <main class="container main-content">
+        members, benefactors, and nonprofits, let's chart a course to success.</h2><main class="container main-content">
 
         <div class="row">
             <div class="col-md-6 offset-md-1 pr-md-6">
@@ -193,11 +136,11 @@
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only"></span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only"></span>
                     </a>
                 </div>
             </div>
@@ -242,11 +185,11 @@
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only"></span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only"></span>
                     </a>
                 </div>
             </div>
